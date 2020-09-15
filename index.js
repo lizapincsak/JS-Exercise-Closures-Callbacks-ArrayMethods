@@ -85,16 +85,23 @@ finalScore(inning, 9) might return:
 
 */ 
 
-function finalScore(inning, number){
-  const team1 = "Home Team";
-  const team2 = "Away Team";
-  const score1 = Math.round(Math.random()* 2.5);
-  const score2 = Math.round(Math.random()* 2.5);
-  return `${team1} score is ${score1}`;
-  return `${team2} score is ${score2}`;
+function finalScore(inning, numberOfInnings){
+  return inning = {
+    homeTeam: score1,
+    awayTeam: score2,
   };
+}
 console.log(finalScore(inning, 9));
-console.log(finalScore(inning, 9));
+//   const team1 = "Home Team";
+//   const team2 = "Away Team";
+//   // const score1 = Math.round(Math.random()* 2.5);
+//   // const score2 = Math.round(Math.random()* 2.5);
+//   return inning (){
+//     home: Math.round(Math.random()* 2.5) ,
+//     away: Math.round(Math.random()* 2.5),
+//   };
+//   // return `${team1} score is ${score1}`;
+//   // return `${team2} score is ${score2 }`;
 
 /* Task 4: 
 
@@ -118,8 +125,8 @@ and returns the score at each pont in the game, like so:
 
 Final Score: awayTeam - homeTeam */
 
-function scoreboard(/* CODE HERE */) {
-  /* CODE HERE */
+function scoreboard(getInningScore, inning, number) {
+  if (inning = )
 }
-
+console.log(scoreboard();
 
