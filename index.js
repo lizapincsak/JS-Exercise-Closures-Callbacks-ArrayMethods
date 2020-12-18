@@ -28,10 +28,18 @@ function processFirstItem(stringList, callback) {
  * 
  * 1. What is the difference between counter1 and counter2?
  * 
+ *  * counter1= name of variable; This renames the previous function. It doesn't have a global variable
+ * counter2= name of function; has a global variable
+ * 
  * 2. Which of the two uses a closure? How can you tell?
+ * 
+ * *  They both use a closure. Whenever I see {}, I should think of closure and scope. For counter1, count is called upon from the parent. When you call on something outside of function {}, this is closure. For counter2, it has {} as well. Most importantly it calls on the global variable count to run the function. 
  * 
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
  *
+ * * counter1 is not best practice. You would use it if you will not need access to the first function because counter1 is renaming it, so it could get messy if other prorammers are not aware that this happened. 
+
+ * counter2 is a much cleaner code. It could be used to access count in the global location. 
 */
 
 // counter1 code
@@ -56,11 +64,12 @@ function counter2() {
 
 Write a function called `inning` that generates a random number of points that a team scored in an inning. This should be a whole number between 0 and 2. */
 
-function inning(/*Code Here*/){
-
-    /*Code Here*/
-
+function inning(){
+  let score = Math.round(Math.random()* 2.5);
+  return score;
 }
+console.log(inning());
+
 
 /* Task 3: finalScore()
 
@@ -76,11 +85,23 @@ finalScore(inning, 9) might return:
 
 */ 
 
-function finalScore(/*code Here*/){
-
-  /*Code Here*/
-
+function finalScore(inning, numberOfInnings){
+  return inning = {
+    homeTeam: score1,
+    awayTeam: score2,
+  };
 }
+console.log(finalScore(inning, 9));
+//   const team1 = "Home Team";
+//   const team2 = "Away Team";
+//   // const score1 = Math.round(Math.random()* 2.5);
+//   // const score2 = Math.round(Math.random()* 2.5);
+//   return inning (){
+//     home: Math.round(Math.random()* 2.5) ,
+//     away: Math.round(Math.random()* 2.5),
+//   };
+//   // return `${team1} score is ${score1}`;
+//   // return `${team2} score is ${score2 }`;
 
 /* Task 4: 
 
@@ -104,8 +125,8 @@ and returns the score at each pont in the game, like so:
 
 Final Score: awayTeam - homeTeam */
 
-function scoreboard(/* CODE HERE */) {
-  /* CODE HERE */
+function scoreboard(getInningScore, inning, number) {
+  if (inning = )
 }
-
+console.log(scoreboard();
 
